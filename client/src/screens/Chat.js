@@ -12,15 +12,15 @@ const Chat = () => {
     console.log("🚀 ~ file: Chat.js:12 ~ Chat ~ roomss:", roomss)
     //👇🏻 Dummy list of rooms
 
-    useLayoutEffect(() => {
-        function fetchGroups() {
-            fetch("http://172.16.0.10:8000/api")
-                .then((res) => res.json())
-                .then((data) => setRooms(data))
-                .catch((err) => console.error("//////////",err));
-        }
-        fetchGroups();
-    }, []);
+    // useLayoutEffect(() => {
+    //     function fetchGroups() {
+    //         fetch("http://localhost:4000/api")
+    //             .then((res) => res.json())
+    //             .then((data) => setRooms(data))
+    //             .catch((err) => console.error("//////////",err));
+    //     }
+    //     fetchGroups();
+    // }, []);
     
     //👇🏻 Runs whenever there is new trigger from the backend
     useEffect(() => {
