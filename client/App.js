@@ -33,7 +33,6 @@ export default function App() {
       });
       
       socket.on("connect_error", (err) => {
-          console.log("🚀 ~ file: App.js:38 ~ socket.on ~ err:", err)
         console.log(err instanceof Error);
         console.log(err.message); 
       });
